@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación: Ley General de Educación N° 28044</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .sidebar-link {
+            display: flex;
+            align-items: center;
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            color: #4a5568; /* gray-700 */
+            transition: background-color 0.2s ease-in-out;
+            text-decoration: none; /* Ensure no underline on links */
+        }
+        .sidebar-link:hover {
+            background-color: #bfdbfe; /* blue-200 */
+        }
+        .sidebar-link.active {
+            background-color: #2563eb; /* blue-600 */
+            color: #ffffff; /* white */
+        }
+        .sidebar-link.active:hover {
+            background-color: #1d4ed8; /* blue-700 */
+        }
+        .sidebar-link svg {
+            margin-right: 0.75rem;
+        }
+        mark {
+            background-color: #a7f3d0; /* Tailwind green-200 */
+            padding: 0 2px;
+            border-radius: 3px;
+        }
+        /* Style for the main content sections for better readability when all are shown */
+        .content-section {
+            padding-bottom: 2.5rem; /* Equivalent to mb-10 or more space */
+            border-bottom: 1px solid #e2e8f0; /* gray-200 */
+            margin-bottom: 2.5rem;
+        }
+        .content-section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-100 font-sans text-gray-800 flex flex-col md:flex-row">
+    <!-- Sidebar Navigation -->
+    <nav class="w-full md:w-64 bg-white p-6 shadow-lg md:shadow-xl flex-shrink-0 rounded-lg m-4 md:m-6">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">Ley 28044</h2>
+        <ul class="space-y-3">
+            <li>
+                <a href="#introduccion" class="sidebar-link w-full text-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l3 3a1 1 0 001.414-1.414L11 9.586V6z" clipRule="evenodd" />
+                    </svg>
+                    <span>Introducción y Fundamentos</span>
+                </a>
+            </li>
+            <li>
+                <a href="#principios_fines" class="sidebar-link w-full text-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.538 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.783.57-1.838-.197-1.538-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.92 8.517c-.783-.57-.381-1.81.588-1.81h3.462a1 1 0 00.95-.69l1.07-3.292z" />
+                    </svg>
+                    <span>Principios y Fines</span>
+                </a>
+            </li>
+            <li>
+                <a href="#universalizacion_calidad_equidad" class="sidebar-link w-full text-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M3 3a1 1 0 000 2h11a1 1 0 100-2H3zm0 4a1 1 0 000 2h7a1 1 0 100-2H3zm0 4a1 1 0 100 2h4a1 1 0 100-2H3zm12 4a1 1 0 100 2h3a1 1 0 100-2h-3z" clipRule="evenodd" />
+                    </svg>
+                    <span>Universalización, Calidad y Equidad</span>
+                </a>
+            </li>
+            <li>
+                <a href="#evaluacion_certificacion" class="sidebar-link w-full text-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                    </svg>
+                    <span>Evaluación y Certificación de la Calidad</span>
+                </a>
+            </li>
+            <li>
+                <a href="#educacion_intercultural_bilingue" class="sidebar-link w-full text-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M7 2a1 1 0 00-1 1v1a1 1 0 000 2v2a1 1 0 000 2v2a1 1 0 000 2v1a1 1 0 001 1h6a1 1 0 001-1v-1a1 1 0 000-2V9a1 1 0 000-2V5a1 1 0 000-2V3a1 1 0 00-1-1H7z" />
+                    </svg>
+                    <span>Educación Intercultural Bilingüe</span>
+                </a>
+            </li>
+            <li>
+                <a href="#roles_estado_sociedad" class="sidebar-link w-full text-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
+                    </svg>
+                    <span>Roles del Estado y la Sociedad</span>
+                </a>
+            </li>
+            <li>
+                <a href="#estructura_sistema" class="sidebar-link w-full text-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0113 3.414L16.586 7A2 2 0 0118 8.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1-3a1 1 0 100 2h.01a1 1 0 100-2H7zm2 3a1 1 0 00-1 1v3a1 1 0 102 0v-3a1 1 0 00-1-1z" clipRule="evenodd" />
+                    </svg>
+                    <span>Estructura General del Sistema</span>
+                </a>
+            </li>
+            <li>
+                <a href="#niveles_modalidades_basica" class="sidebar-link w-full text-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M3 6a3 3 0 013-3h10a2 2 0 012 2v8a2 2 0 01-2 2H6a3 3 0 01-3-3V6zm4 0a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h.01a1 1 0 100-2H10zm3 0a1 1 0 100 2h.01a1 1 0 100-2H13zm-3 4a1 1 0 100 2h3a1 1 0 100-2h-3z" clipRule="evenodd" />
+                    </svg>
+                    <span>Niveles y Modalidades de la Educación Básica</span>
+                </a>
+            </li>
+            <li>
+                <a href="#educacion_tecnico_comunitaria_superior" class="sidebar-link w-full text-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V7.414A2 2 0 0015.414 6L12 2.586A2 2 0 0010.586 2H6zm5 6a1 1 0 10-2 0v3.586l-1.293-1.293a1 1 0 10-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L11 11.586V8z" clipRule="evenodd" />
+                    </svg>
+                    <span>Educación Técnico-Productiva, Comunitaria y Superior</span>
+                </a>
+            </li>
+            <li>
+                <a href="#comunidad_educativa" class="sidebar-link w-full text-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zm-6 9a3 3 0 11-6 0 3 3 0 016 0zm13-6a3 3 0 11-6 0 3 3 0 016 0zM4.343 17.343a8 8 0 0111.314 0l-1.414 1.414a6 6 0 00-8.486 0l-1.414-1.414z" />
+                    </svg>
+                    <span>Actores de la Comunidad Educativa</span>
+                </a>
+            </li>
+            <li>
+                <a href="#gestion_sistema" class="sidebar-link w-full text-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 4a1 1 0 011 1v1a1 1 0 11-2 0V7a1 1 0 011-1zm-4 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zm4 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM4 6a1 1 0 011 1v1a1 1 0 11-2 0V7a1 1 0 011-1zm-1 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1z" clipRule="evenodd" />
+                    </svg>
+                    <span>Gestión Descentralizada del Sistema</span>
+                </a>
+            </li>
+            <li>
+                <a href="#instancias_gestion" class="sidebar-link w-full text-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm-7-9a1 1 0 000 2h14a1 1 0 100-2H3z" clipRule="evenodd" />
+                    </svg>
+                    <span>Instancias de Gestión: IE, UGEL, DRE, MINEDU</span>
+                </a>
+            </li>
+            <li>
+                <a href="#financiamiento" class="sidebar-link w-full text-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 002-2V4H4zm10 10H4v2a2 2 0 002 2h8a2 2 0 002-2v-2zm-3-3H7a1 1 0 000 2h4a1 1 0 000-2z" clipRule="evenodd" />
+                    </svg>
+                    <span>Financiamiento de la Educación Pública</span>
+                </a>
+            </li>
+            <li>
+                <a href="#disposiciones_complementarias_finales" class="sidebar-link w-full text-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 011-1h4a1 1 0 110 2H8a1 1 0 01-1-1z" clipRule="evenodd" />
+                    </svg>
+                    <span>Disposiciones Complementarias y Finales</span>
+                </a>
+            </li>
+            <li>
+                <a href="#quiz" class="sidebar-link w-full text-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5L5.442 14H9v1h2v-1h3.558L10.867 7.5A1 1 0 0010 7z" clipRule="evenodd" />
+                    </svg>
+                    <span>Cuestionario Interactivo</span>
+                </a>
+            </li>
+            <li>
+                <a href="#busqueda" class="sidebar-link w-full text-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd" />
+                    </svg>
+                    <span>Búsqueda en la Ley</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow p-6 md:p-8 bg-white shadow-lg md:shadow-xl rounded-lg m-4 md:m-6">
+
+        <!-- Sección: Introducción y Fundamentos de la Ley General de Educación N° 28044 -->
+        <section id="introduccion" class="content-section">
+            <h1 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 pb-3 border-blue-200">
+                Introducción y Fundamentos de la Ley General de Educación N° 28044
+            </h1>
+            <div class="text-gray-700 leading-relaxed">
+                <p class="text-lg mb-4">La Ley General de Educación N° 28044 es el marco legal fundamental que rige el sistema educativo peruano. Promulgada en 2003, establece los lineamientos generales, las atribuciones del Estado, y los derechos y responsabilidades de las personas y la sociedad en su función educadora.</p>
+                <div class="bg-blue-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-blue-800 mb-2">Artículo 1°: Objeto y ámbito de aplicación</h3>
+                    <p class="text-sm text-blue-700">Esta ley tiene por objeto establecer los lineamientos generales de la educación y del Sistema Educativo Peruano, las atribuciones y obligaciones del Estado y los derechos y responsabilidades de las personas y la sociedad en su función educadora. Rige todas las actividades educativas realizadas dentro del territorio nacional.</p>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-blue-800 mb-2">Artículo 2°: Concepto de la educación</h3>
+                    <p class="text-sm text-blue-700">La educación es un proceso de aprendizaje y enseñanza que se desarrolla a lo largo de toda la vida y que contribuye a la formación integral de las personas, al pleno desarrollo de sus potencialidades, a la creación de cultura, y al desarrollo de la familia y de la comunidad nacional, latinoamericana y mundial. Se desarrolla en instituciones educativas y en diferentes ámbitos de la sociedad.</p>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-blue-800 mb-2">Artículo 3°: La educación como derecho</h3>
+                    <p class="text-sm text-blue-700">La educación es un derecho fundamental de la persona y de la sociedad. El Estado garantiza el ejercicio del derecho a una educación integral y de calidad para todos y la universalización de la Educación Básica.</p>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-blue-800 mb-2">Artículo 4°: Gratuidad de la educación</h3>
+                    <p class="text-sm text-blue-700">La educación es un servicio público; cuando lo provee el Estado es gratuita en todos sus niveles y modalidades. En Educación Inicial y Primaria se complementa con programas de alimentación, salud y materiales educativos.</p>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-blue-800 mb-2">Artículo 5°: Libertad de enseñanza</h3>
+                    <p class="text-sm text-blue-700">La libertad de enseñanza es reconocida y garantizada por el Estado. Los padres tienen el deber de educar a sus hijos y el derecho a elegir las instituciones. Toda persona natural o jurídica tiene derecho a constituir y conducir centros educativos.</p>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-blue-800 mb-2">Artículo 6°: Formación ética y cívica</h3>
+                    <p class="text-sm text-blue-700">La formación ética y cívica es obligatoria en todo proceso educativo, preparando a los educandos para sus obligaciones y derechos ciudadanos. La enseñanza de la Constitución Política y derechos humanos es obligatoria.</p>
+                </div>
+                <div class="bg-blue-50 p-4 rounded-lg shadow-sm">
+                    <h3 class="font-semibold text-blue-800 mb-2">Artículo 7°: Proyecto Educativo Nacional</h3>
+                    <p class="text-sm text-blue-700">Es el conjunto de políticas que dan el marco estratégico al desarrollo de la educación, construido y desarrollado en conjunto por el Estado y la sociedad a través del diálogo y consenso.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Principios y Fines de la Educación Peruana -->
+        <section id="principios_fines" class="content-section">
+            <h1 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 pb-3 border-blue-200">
+                Principios y Fines de la Educación Peruana
+            </h1>
+            <div class="text-gray-700 leading-relaxed">
+                <p class="text-lg mb-4">La educación peruana se sustenta en principios clave y persigue fines esenciales para el desarrollo integral de las personas y la sociedad.</p>
+                <div class="bg-green-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-green-800 mb-2">Artículo 8°: Principios de la educación</h3>
+                    <ul class="list-disc list-inside text-sm text-green-700">
+                        <li><strong>Ética:</strong> Promueve valores de paz, solidaridad, justicia, libertad, honestidad, tolerancia, responsabilidad, trabajo, verdad y respeto a las normas.</li>
+                        <li><strong>Equidad:</strong> Garantiza iguales oportunidades de acceso, permanencia y trato en un sistema educativo de calidad.</li>
+                        <li><strong>Inclusión:</strong> Incorpora a personas con discapacidad, grupos excluidos y vulnerables.</li>
+                        <li><strong>Calidad:</strong> Asegura condiciones adecuadas para una educación integral, pertinente, abierta, flexible y permanente.</li>
+                        <li><strong>Democracia:</strong> Promueve el respeto a los derechos humanos, libertad de conciencia, pensamiento y opinión, y el ejercicio pleno de la ciudadanía.</li>
+                        <li><strong>Interculturalidad:</strong> Asume la diversidad cultural, étnica y lingüística como riqueza.</li>
+                        <li><strong>Conciencia ambiental:</strong> Motiva el respeto, cuidado y conservación del entorno natural.</li>
+                        <li><strong>Creatividad e innovación:</strong> Promueven la producción de nuevos conocimientos.</li>
+                    </ul>
+                </div>
+                <div class="bg-green-50 p-4 rounded-lg shadow-sm">
+                    <h3 class="font-semibold text-green-800 mb-2">Artículo 9°: Fines de la educación peruana</h3>
+                    <ul class="list-disc list-inside text-sm text-green-700">
+                        <li>Formar personas capaces de lograr su realización ética, intelectual, artística, cultural, afectiva, física, espiritual y religiosa, promoviendo su identidad y autoestima.</li>
+                        <li>Contribuir a formar una sociedad democrática, solidaria, justa, inclusiva, próspera, tolerante y forjadora de una cultura de paz.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Universalización, Calidad y Equidad de la Educación -->
+        <section id="universalizacion_calidad_equidad" class="content-section">
+            <h1 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 pb-3 border-blue-200">
+                Universalización, Calidad y Equidad de la Educación
+            </h1>
+            <div class="text-gray-700 leading-relaxed">
+                <p class="text-lg mb-4">La ley busca asegurar que la educación sea accesible para todos, de alta calidad y equitativa, eliminando barreras y promoviendo la igualdad de oportunidades.</p>
+                <div class="bg-yellow-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-yellow-800 mb-2">Artículo 10°: Criterios para la universalización, la calidad y la equidad</h3>
+                    <p class="text-sm text-yellow-700">Se adopta un enfoque intercultural y se realiza una acción descentralizada, intersectorial, preventiva, compensatoria y de recuperación para igualar oportunidades y lograr resultados satisfactorios.</p>
+                </div>
+                <div class="bg-yellow-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-yellow-800 mb-2">Artículo 11°: Articulación intersectorial</h3>
+                    <p class="text-sm text-yellow-700">La articulación intersectorial en el Estado y con el sector privado se da en todos los ámbitos de la gestión descentralizada, con activa participación de la comunidad educativa.</p>
+                </div>
+                <div class="bg-yellow-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-yellow-800 mb-2">Artículo 12°: Universalización de la Educación Básica</h3>
+                    <p class="text-sm text-yellow-700">La educación es obligatoria para los estudiantes de los niveles de inicial, primaria y secundaria. El Estado provee los servicios públicos necesarios para lograr este objetivo.</p>
+                </div>
+                <div class="bg-yellow-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-yellow-800 mb-2">Artículo 13°: Calidad de la educación</h3>
+                    <p class="text-sm text-yellow-700">Es el nivel óptimo de formación que deben alcanzar las personas para enfrentar los retos del desarrollo humano. Factores clave incluyen currículos básicos, inversión mínima por alumno, formación docente, infraestructura adecuada e investigación educativa.</p>
+                </div>
+                <div class="bg-yellow-50 p-4 rounded-lg shadow-sm">
+                    <h3 class="font-semibold text-yellow-800 mb-2">Artículo 17° y 18°: Equidad en la educación y Medidas de equidad</h3>
+                    <p class="text-sm text-yellow-700">El Estado toma medidas para compensar las desigualdades derivadas de factores económicos, geográficos o sociales, favoreciendo a segmentos sociales en situación de abandono o riesgo. Esto incluye políticas compensatorias, asignación prioritaria de recursos, programas inclusivos y sistemas de becas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Evaluación y Certificación de la Calidad Educativa -->
+        <section id="evaluacion_certificacion" class="content-section">
+            <h1 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 pb-3 border-blue-200">
+                Evaluación y Certificación de la Calidad Educativa
+            </h1>
+            <div class="text-gray-700 leading-relaxed">
+                <p class="text-lg mb-4">El Estado garantiza un sistema de evaluación, acreditación y certificación para asegurar la calidad educativa en todo el país.</p>
+                <div class="bg-orange-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-orange-800 mb-2">Artículo 14°: Sistema Nacional de Evaluación, Acreditación y Certificación de la Calidad Educativa</h3>
+                    <p class="text-sm text-orange-700">El Estado garantiza el funcionamiento de un Sistema Nacional de Evaluación, Acreditación y Certificación de la Calidad Educativa, que abarca todo el territorio nacional y responde con flexibilidad a las características de cada región.</p>
+                </div>
+                <div class="bg-orange-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-orange-800 mb-2">Artículo 15°: Organismos del Sistema Nacional de Evaluación, Acreditación y Certificación</h3>
+                    <p class="text-sm text-orange-700">En Educación Básica, el Instituto Peruano de Evaluación, Acreditación y Certificación Educativa. En Educación Superior, un organismo creado por ley específica.</p>
+                </div>
+                <div class="bg-orange-50 p-4 rounded-lg shadow-sm">
+                    <h3 class="font-semibold text-orange-800 mb-2">Artículo 16°: Funciones de los Órganos del Sistema Nacional de Evaluación, Acreditación y Certificación</h3>
+                    <ul class="list-disc list-inside text-sm text-orange-700">
+                        <li>Promueven una cultura de calidad.</li>
+                        <li>Evalúan la calidad del aprendizaje y procesos pedagógicos.</li>
+                        <li>Acreditan periódicamente las instituciones educativas.</li>
+                        <li>Certifican y recertifican competencias profesionales.</li>
+                        <li>Difunden resultados y desarrollan programas de formación especializada.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Educación Intercultural Bilingüe -->
+        <section id="educacion_intercultural_bilingue" class="content-section">
+            <h1 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 pb-3 border-blue-200">
+                Educación Intercultural Bilingüe
+            </h1>
+            <div class="text-gray-700 leading-relaxed">
+                <p class="text-lg mb-4">La ley reconoce y garantiza el derecho de los pueblos indígenas a una educación en condiciones de igualdad, promoviendo la diversidad cultural y lingüística.</p>
+                <div class="bg-lime-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-lime-800 mb-2">Artículo 19°: Educación de los pueblos indígenas</h3>
+                    <p class="text-sm text-lime-700">El Estado reconoce y garantiza el derecho de los pueblos indígenas a una educación en condiciones de igualdad, estableciendo programas especiales que garanticen igualdad de oportunidades y equidad de género.</p>
+                </div>
+                <div class="bg-lime-50 p-4 rounded-lg shadow-sm">
+                    <h3 class="font-semibold text-lime-800 mb-2">Artículo 20°: Educación Bilingüe Intercultural</h3>
+                    <ul class="list-disc list-inside text-sm text-lime-700">
+                        <li>Promueve la valoración y enriquecimiento de la propia cultura, respeto a la diversidad cultural y diálogo intercultural.</li>
+                        <li>Garantiza el aprendizaje en la lengua materna de los educandos y del castellano como segunda lengua.</li>
+                        <li>Determina la obligación de los docentes de dominar la lengua originaria y el castellano.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Roles del Estado y la Sociedad en la Educación -->
+        <section id="roles_estado_sociedad" class="content-section">
+            <h1 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 pb-3 border-blue-200">
+                Roles del Estado y la Sociedad en la Educación
+            </h1>
+            <div class="text-gray-700 leading-relaxed">
+                <p class="text-lg mb-4">La educación es una responsabilidad compartida entre el Estado y la sociedad, cada uno con funciones específicas para asegurar su calidad y equidad.</p>
+                <div class="bg-cyan-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-cyan-800 mb-2">Artículo 21°: Función del Estado</h3>
+                    <ul class="list-disc list-inside text-sm text-cyan-700">
+                        <li>Ejercer un rol normativo, promotor, compensador, concertador, articulador, garante, planificador, regulador y financiador.</li>
+                        <li>Proveer y administrar servicios educativos públicos gratuitos y de calidad.</li>
+                        <li>Promover el desarrollo científico y tecnológico, reconocer la innovación e investigación.</li>
+                    </ul>
+                </div>
+                <div class="bg-cyan-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-cyan-800 mb-2">Artículo 22°: Función de la sociedad</h3>
+                    <p class="text-sm text-cyan-700">Tiene el derecho y el deber de contribuir a la calidad y equidad de la educación, participando en la definición de políticas educativas y colaborando en la prestación del servicio.</p>
+                </div>
+                <div class="bg-cyan-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-cyan-800 mb-2">Artículo 23°: Medios de comunicación</h3>
+                    <p class="text-sm text-cyan-700">Deben contribuir a la formación ética, cívica, cultural y democrática de la población, difundiendo contenidos que respeten a la persona humana y su dignidad.</p>
+                </div>
+                <div class="bg-cyan-50 p-4 rounded-lg shadow-sm">
+                    <h3 class="font-semibold text-cyan-800 mb-2">Artículo 24°: Empresas</h3>
+                    <p class="text-sm text-cyan-700">Contribuyen al desarrollo de la educación nacional, participando en el diseño de políticas, promoviendo alianzas estratégicas con instituciones educativas y brindando facilidades a su personal para la educación.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Estructura General del Sistema Educativo Peruano -->
+        <section id="estructura_sistema" class="content-section">
+            <h1 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 pb-3 border-blue-200">
+                Estructura General del Sistema Educativo Peruano
+            </h1>
+            <div class="text-gray-700 leading-relaxed">
+                <p class="text-lg mb-4">El Sistema Educativo Peruano es integrador y flexible, organizado en etapas, niveles, modalidades, ciclos y programas para atender las diversas necesidades de aprendizaje.</p>
+                <div class="bg-purple-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-purple-800 mb-2">Artículo 25°: Características del Sistema Educativo</h3>
+                    <p class="text-sm text-purple-700">Es integrador y flexible, abarcando y articulando todos sus elementos y permitiendo a los usuarios organizar su trayectoria educativa. Se adecua a las necesidades y exigencias de la diversidad del país.</p>
+                </div>
+                <div class="bg-purple-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-purple-800 mb-2">Artículo 26°: Articulación y coordinación del Sistema Educativo</h3>
+                    <p class="text-sm text-purple-700">Articula sus componentes para que toda persona tenga oportunidad de alcanzar un mayor nivel de aprendizaje, manteniendo relaciones funcionales con entidades del Estado, sociedad, empresa y medios de comunicación.</p>
+                </div>
+                <div class="bg-purple-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-purple-800 mb-2">Artículo 27°: La Educación a Distancia</h3>
+                    <p class="text-sm text-purple-700">Modalidad caracterizada por la interacción simultánea o diferida entre actores educativos, facilitada por medios tecnológicos que propician el aprendizaje autónomo. Aplicable a todas las etapas.</p>
+                </div>
+                <div class="bg-purple-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-purple-800 mb-2">Artículo 28°: Las Etapas, Niveles, Modalidades, Ciclos y Programas</h3>
+                    <p class="text-sm text-purple-700">Define cómo se organiza el sistema educativo: Etapas (periodos progresivos), Niveles (periodos graduales), Modalidad (alternativas de atención según características), Ciclos (procesos educativos por logros), Programas (conjuntos de acciones educativas).</p>
+                </div>
+                <div class="bg-purple-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-purple-800 mb-2">Artículo 29°: Etapas del Sistema Educativo</h3>
+                    <ul class="list-disc list-inside text-sm text-purple-700">
+                        <li><strong>Educación Básica:</strong> Destinada a favorecer el desarrollo integral del estudiante, el despliegue de sus potencialidades y el desarrollo de capacidades, conocimientos, actitudes y valores fundamentales.</li>
+                        <li><strong>Educación Superior:</strong> Destinada a la investigación, creación y difusión de conocimientos; a la proyección a la comunidad; al logro de competencias profesionales de alto nivel.</li>
+                    </ul>
+                </div>
+                <div class="bg-purple-50 p-4 rounded-lg shadow-sm">
+                    <h3 class="font-semibold text-purple-800 mb-2">Artículo 30°: Evaluación del alumno</h3>
+                    <p class="text-sm text-purple-700">Es un proceso permanente de comunicación y reflexión sobre los procesos y resultados del aprendizaje. Es formativa e integral, orientada a mejorar esos procesos y ajustarse a las necesidades de los estudiantes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Niveles y Modalidades de la Educación Básica -->
+        <section id="niveles_modalidades_basica" class="content-section">
+            <h1 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 pb-3 border-blue-200">
+                Niveles y Modalidades de la Educación Básica
+            </h1>
+            <div class="text-gray-700 leading-relaxed">
+                <p class="text-lg mb-4">La Educación Básica es obligatoria y se organiza en diferentes modalidades para satisfacer las necesidades de aprendizaje de niños, jóvenes y adultos.</p>
+                <div class="bg-pink-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-pink-800 mb-2">Artículo 31°: Objetivos de la Educación Básica</h3>
+                    <ul class="list-disc list-inside text-sm text-pink-700">
+                        <li>Formar integralmente al educando en aspectos físico, afectivo y cognitivo para su identidad personal y social.</li>
+                        <li>Desarrollar capacidades, valores y actitudes para el aprendizaje a lo largo de toda la vida.</li>
+                        <li>Desarrollar aprendizajes en ciencias, humanidades, técnica, cultura, arte, educación física y nuevas tecnologías.</li>
+                    </ul>
+                </div>
+                <div class="bg-pink-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-pink-800 mb-2">Artículo 32°: Organización de la Educación Básica</h3>
+                    <p class="text-sm text-pink-700">Se organiza en Educación Básica Regular, Educación Básica Alternativa y Educación Básica Especial.</p>
+                </div>
+                <div class="bg-pink-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-pink-800 mb-2">Artículo 33° y 34°: Currículo de la Educación Básica y sus Características</h3>
+                    <p class="text-sm text-pink-700">Es abierto, flexible, integrador y diversificado, sustentado en los principios y fines de la educación peruana. El Ministerio de Educación diseña los currículos básicos nacionales, que se diversifican regional y localmente.</p>
+                </div>
+                <div class="bg-pink-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-pink-800 mb-2">Artículo 35°: Culminación de la Educación Básica</h3>
+                    <p class="text-sm text-pink-700">Da derecho al diploma de egresado con mención en un área técnica, habilitando para el mercado laboral y acceso a nivel superior.</p>
+                </div>
+                <div class="bg-pink-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-pink-800 mb-2">Artículo 36°: Educación Básica Regular</h3>
+                    <p class="text-sm text-pink-700">Abarca Educación Inicial (0-5 años), Primaria (6 años) y Secundaria (5 años), dirigida a niños y adolescentes según su evolución física, afectiva y cognitiva.</p>
+                </div>
+                <div class="bg-pink-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-pink-800 mb-2">Artículo 37° y 38°: Educación Básica Alternativa y Alfabetización</h3>
+                    <p class="text-sm text-pink-700">Dirigida a jóvenes y adultos que no accedieron o no culminaron la educación regular, o que necesitan compatibilizar estudio y trabajo. La alfabetización está comprendida en esta modalidad.</p>
+                </div>
+                <div class="bg-pink-50 p-4 rounded-lg shadow-sm">
+                    <h3 class="font-semibold text-pink-800 mb-2">Artículo 39°: Educación Básica Especial</h3>
+                    <p class="text-sm text-pink-700">Con enfoque inclusivo, atiende a personas con necesidades educativas especiales (discapacidad o superdotados) buscando su integración en aulas regulares.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Educación Técnico-Productiva, Comunitaria y Superior -->
+        <section id="educacion_tecnico_comunitaria_superior" class="content-section">
+            <h1 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 pb-3 border-blue-200">
+                Educación Técnico-Productiva, Comunitaria y Superior
+            </h1>
+            <div class="text-gray-700 leading-relaxed">
+                <p class="text-lg mb-4">Más allá de la educación básica, el sistema peruano ofrece modalidades especializadas para el desarrollo laboral, comunitario y profesional.</p>
+                <div class="bg-teal-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-teal-800 mb-2">Artículo 40°: Definición y finalidad de la Educación Técnico-Productiva</h3>
+                    <p class="text-sm text-teal-700">Orientada a la adquisición de competencias laborales y empresariales, contribuyendo a un mejor desempeño laboral y desarrollo personal.</p>
+                </div>
+                <div class="bg-teal-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-teal-800 mb-2">Artículo 41° al 45°: Objetivos, Organización, Políticas y Centros de la ETP</h3>
+                    <p class="text-sm text-teal-700">Busca desarrollar competencias para el trabajo dependiente o independiente, motivar la aplicación de conocimientos y actualizar a trabajadores. Se organiza en ciclos (Básico y Medio) y los Centros de ETP ofrecen servicios educativos y capacitación.</p>
+                </div>
+                <div class="bg-teal-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-teal-800 mb-2">Artículo 46° al 48°: Educación Comunitaria</h3>
+                    <p class="text-sm text-teal-700">Se desarrolla desde las organizaciones de la sociedad, orientada al enriquecimiento de capacidades personales y promoción del desarrollo humano. Sus aprendizajes pueden ser convalidados en otros niveles.</p>
+                </div>
+                <div class="bg-teal-50 p-4 rounded-lg shadow-sm">
+                    <h3 class="font-semibold text-teal-800 mb-2">Artículo 49° al 51°: Educación Superior</h3>
+                    <p class="text-sm text-teal-700">Es la segunda etapa del Sistema Educativo, consolida la formación integral, produce conocimiento, desarrolla investigación y forma profesionales de alto nivel. Requiere haber concluido la Educación Básica y se imparte en instituciones universitarias, institutos y escuelas superiores.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Actores de la Comunidad Educativa: Roles y Responsabilidades -->
+        <section id="comunidad_educativa" class="content-section">
+            <h1 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 pb-3 border-blue-200">
+                Actores de la Comunidad Educativa: Roles y Responsabilidades
+            </h1>
+            <div class="text-gray-700 leading-relaxed">
+                <p class="text-lg mb-4">La comunidad educativa es un pilar fundamental del sistema, con roles y responsabilidades definidos para cada uno de sus miembros.</p>
+                <div class="bg-red-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-red-800 mb-2">Artículo 52°: Conformación y participación</h3>
+                    <p class="text-sm text-red-700">La comunidad educativa está conformada por estudiantes, padres de familia, profesores, directivos, administrativos, ex alumnos y miembros de la comunidad local. Participan en la formulación y ejecución del Proyecto Educativo Institucional.</p>
+                </div>
+                <div class="bg-red-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-red-800 mb-2">Artículo 53°: El estudiante</h3>
+                    <p class="text-sm text-red-700">Es el centro del proceso educativo. Tiene derecho a un sistema eficiente, buen trato y orientación, y la responsabilidad de asumir su aprendizaje, practicar la tolerancia y participar en la institución.</p>
+                </div>
+                <div class="bg-red-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-red-800 mb-2">Artículo 54°: La familia</h3>
+                    <p class="text-sm text-red-700">Núcleo fundamental de la sociedad, responsable de la educación integral de los hijos. Deben educar con respeto, informarse sobre la calidad del servicio educativo, participar y colaborar en el proceso.</p>
+                </div>
+                <div class="bg-red-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-red-800 mb-2">Artículo 55°: El Director</h3>
+                    <p class="text-sm text-red-700">Máxima autoridad y el representante legal de la Institución Educativa. Responsable de la gestión en los ámbitos pedagógico, institucional y administrativo.</p>
+                </div>
+                <div class="bg-red-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-red-800 mb-2">Artículo 56° al 61°: El Profesor y la Carrera Pública Magisterial</h3>
+                    <p class="text-sm text-red-700">Agente fundamental del proceso educativo, con misión de contribuir eficazmente en la formación de los estudiantes. La carrera pública docente se rige por criterios de formación, idoneidad, desempeño y méritos. Se requiere título pedagógico para la docencia en Educación Básica.</p>
+                </div>
+                <div class="bg-red-50 p-4 rounded-lg shadow-sm">
+                    <h3 class="font-semibold text-red-800 mb-2">Artículo 62°: Personal administrativo</h3>
+                    <p class="text-sm text-red-700">Coopera para la creación de un ambiente favorable para el aprendizaje, desempeñándose en funciones de apoyo a la gestión educativa.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Gestión Descentralizada del Sistema Educativo -->
+        <section id="gestion_sistema" class="content-section">
+            <h1 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 pb-3 border-blue-200">
+                Gestión Descentralizada del Sistema Educativo
+            </h1>
+            <div class="text-gray-700 leading-relaxed">
+                <p class="text-lg mb-4">La gestión del sistema educativo nacional es descentralizada, simplificada, participativa y flexible, buscando la autonomía pedagógica y de gestión.</p>
+                <div class="bg-teal-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-teal-800 mb-2">Artículo 63°: Definición de la gestión</h3>
+                    <p class="text-sm text-teal-700">La gestión del sistema educativo nacional es descentralizada, simplificada, participativa y flexible. Se ejecuta en un marco de respeto a la autonomía pedagógica y de gestión que favorezca la acción educativa.</p>
+                </div>
+                <div class="bg-teal-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-teal-800 mb-2">Artículo 64°: Objetivos de la gestión</h3>
+                    <p class="text-sm text-teal-700">Contribuir a desarrollar la Institución Educativa como comunidad de aprendizaje, fortalecer su capacidad de decisión, asegurar la coherencia administrativa, lograr manejo eficaz, desarrollar liderazgos democráticos, etc.</p>
+                </div>
+                <div class="bg-teal-50 p-4 rounded-lg shadow-sm">
+                    <h3 class="font-semibold text-teal-800 mb-2">Artículo 65°: Instancias de gestión</h3>
+                    <ul class="list-disc list-inside text-sm text-teal-700">
+                        <li>La Institución Educativa.</li>
+                        <li>La Unidad de Gestión Educativa Local (UGEL).</li>
+                        <li>La Dirección Regional de Educación (DRE).</li>
+                        <li>El Ministerio de Educación (MINEDU).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Instancias de Gestión Educativa: IE, UGEL, DRE, MINEDU y CNE -->
+        <section id="instancias_gestion" class="content-section">
+            <h1 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 pb-3 border-blue-200">
+                Instancias de Gestión Educativa: IE, UGEL, DRE, MINEDU y CNE
+            </h1>
+            <div class="text-gray-700 leading-relaxed">
+                <p class="text-lg mb-4">El sistema educativo peruano se organiza a través de diversas instancias de gestión, cada una con roles y funciones específicas para asegurar la implementación de la política educativa.</p>
+                <div class="bg-indigo-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-indigo-800 mb-2">Artículo 66° al 72°: La Institución Educativa (IE)</h3>
+                    <p class="text-sm text-indigo-700">Es la primera y principal instancia de gestión, donde tiene lugar la prestación del servicio. Elabora su Proyecto Educativo Institucional, organiza su gestión, diversifica el currículo y rinde cuentas. Puede ser pública (gestión directa o privada por convenio) o privada.</p>
+                </div>
+                <div class="bg-indigo-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-indigo-800 mb-2">Artículo 73° al 75°: La Unidad de Gestión Educativa Local (UGEL)</h3>
+                    <p class="text-sm text-indigo-700">Instancia de ejecución descentralizada del Gobierno Regional. Fortalece capacidades de gestión de las IE, impulsa la cohesión social, diseña y evalúa el Proyecto Educativo Local, y conduce procesos de personal docente y administrativo.</p>
+                </div>
+                <div class="bg-indigo-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-indigo-800 mb-2">Artículo 76° al 78°: La Dirección Regional de Educación (DRE)</h3>
+                    <p class="text-sm text-indigo-700">Órgano especializado del Gobierno Regional. Promueve educación, cultura, deporte, ciencia y tecnología. Autoriza el funcionamiento de IE, formula el presupuesto educativo regional y gestiona financiamiento.</p>
+                </div>
+                <div class="bg-indigo-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-indigo-800 mb-2">Artículo 79° y 80°: El Ministerio de Educación (MINEDU)</h3>
+                    <p class="text-sm text-indigo-700">Órgano del Gobierno Nacional que define, dirige y articula la política de educación, cultura, recreación y deporte. Elabora diseños curriculares básicos, dirige programas nacionales y lidera el incremento de la inversión educativa.</p>
+                </div>
+                <div class="bg-indigo-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-indigo-800 mb-2">Artículo 81°: El Consejo Nacional de Educación (CNE)</h3>
+                    <p class="text-sm text-indigo-700">Órgano especializado, consultivo y autónomo del Ministerio de Educación. Participa en la formulación, concertación, seguimiento y evaluación del Proyecto Educativo Nacional y políticas educativas de mediano y largo plazo.</p>
+                </div>
+                <div class="bg-indigo-50 p-4 rounded-lg shadow-sm">
+                    <h3 class="font-semibold text-indigo-800 mb-2">Artículo 82°: Coordinación con los Gobiernos Locales</h3>
+                    <p class="text-sm text-indigo-700">El MINEDU, DRE y UGEL coordinan con las municipalidades para apoyar la prestación de servicios de las IE y contribuir al desarrollo educativo en su jurisdicción.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Financiamiento de la Educación Pública -->
+        <section id="financiamiento" class="content-section">
+            <h1 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 pb-3 border-blue-200">
+                Financiamiento de la Educación Pública
+            </h1>
+            <div class="text-gray-700 leading-relaxed">
+                <p class="text-lg mb-4">El financiamiento es crucial para garantizar la calidad y equidad de la educación pública en el Perú.</p>
+                <div class="bg-gray-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-gray-800 mb-2">Artículo 83°: Financiamiento de la educación</h3>
+                    <p class="text-sm text-gray-700">El financiamiento de la educación comprende los recursos financieros destinados a satisfacer las necesidades educativas de la población. Anualmente, el Estado destina no menos del 6% del Producto Bruto Interno a la educación estatal.</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-gray-800 mb-2">Artículo 84°: Fuentes de financiamiento</h3>
+                    <ul class="list-disc list-inside text-sm text-gray-700">
+                        <li>Tesoro Público, recursos directamente recaudados, donaciones, excedentes por actividades productivas, endeudamiento interno y externo.</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-gray-800 mb-2">Artículo 85° al 90°: Asignación, Ingresos Propios, Transferencia, Regulación Tributaria y Eficiencia del Gasto</h3>
+                    <p class="text-sm text-gray-700">La asignación se basa en objetivos y metas, incluyendo estudios de costos por alumno. Los ingresos propios de las IE se destinan a proyectos de inversión. Las donaciones gozan de exoneración tributaria. La evaluación del gasto busca transparencia y eficiencia.</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-gray-800 mb-2">Artículo 91°: El Fondo Nacional de Desarrollo de la Educación Peruana (FONDEP)</h3>
+                    <p class="text-sm text-gray-700">Apoya el financiamiento de proyectos de inversión, innovación y desarrollo educativo.</p>
+                </div>
+                <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                    <h3 class="font-semibold text-gray-800 mb-2">Artículo 92°: Convenios con asociaciones sin fines de lucro</h3>
+                    <p class="text-sm text-gray-700">El Estado puede establecer convenios con asociaciones sin fines de lucro que conducen instituciones de educación pública para apoyar a la población desfavorecida.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Disposiciones Complementarias y Finales -->
+        <section id="disposiciones_complementarias_finales" class="content-section">
+            <h1 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 pb-3 border-blue-200">
+                Disposiciones Complementarias y Finales
+            </h1>
+            <div class="text-gray-700 leading-relaxed">
+                <p class="text-lg mb-4">Estas disposiciones establecen la implementación gradual de la ley, la derogación de normativas anteriores y otros aspectos transitorios.</p>
+                <div class="bg-fuchsia-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-fuchsia-800 mb-2">Disposición Primera (Complementaria): Aplicación gradual</h3>
+                    <p class="text-sm text-fuchsia-700">La aplicación de la Ley General de Educación será gradual y progresiva, de acuerdo con el plan general de conversión del sistema educativo que formulará el Ministerio de Educación.</p>
+                </div>
+                <div class="bg-fuchsia-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-fuchsia-800 mb-2">Disposición Tercera (Complementaria): Incremento presupuestal</h3>
+                    <p class="text-sm text-fuchsia-700">El incremento del presupuesto destinado a educación, de conformidad con el artículo 83°, se realizará progresivamente. El financiamiento será considerado inversión intangible.</p>
+                </div>
+                <div class="bg-fuchsia-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-fuchsia-800 mb-2">Disposición Séptima (Complementaria): Creación del Instituto Peruano de Evaluación</h3>
+                    <p class="text-sm text-fuchsia-700">El Poder Ejecutivo presentará el proyecto de ley de creación del Instituto Peruano de Evaluación, Acreditación y Certificación Educativa para la Educación Básica.</p>
+                </div>
+                <div class="bg-fuchsia-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-fuchsia-800 mb-2">Disposición Octava (Complementaria): Creación del FONDEP</h3>
+                    <p class="text-sm text-fuchsia-700">Créase el Fondo Nacional de Desarrollo de la Educación Peruana (FONDEP) como Programa Presupuestal del Ministerio de Educación, constituido por recursos asignados, ingresos propios, donaciones, etc.</p>
+                </div>
+                <div class="bg-fuchsia-50 p-4 rounded-lg shadow-sm mb-4">
+                    <h3 class="font-semibold text-fuchsia-800 mb-2">Disposición Primera (Final): Derogación de la Ley N° 23384</h3>
+                    <p class="text-sm text-fuchsia-700">Derógase la Ley N° 23384, Ley General de Educación, y sus modificatorias y complementarias; así como los demás dispositivos que se opongan a la presente Ley.</p>
+                </div>
+                <div class="bg-fuchsia-50 p-4 rounded-lg shadow-sm">
+                    <h3 class="font-semibold text-fuchsia-800 mb-2">Disposición Segunda (Final): Reglamentación</h3>
+                    <p class="text-sm text-fuchsia-700">El Ministerio de Educación reglamentará la presente ley en un plazo de ciento veinte días.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Cuestionario Interactivo -->
+        <section id="quiz" class="content-section">
+            <h1 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 pb-3 border-blue-200">
+                Cuestionario Interactivo
+            </h1>
+            <div class="space-y-6">
+                <p class="text-lg mb-4">¡Pon a prueba tus conocimientos sobre la Ley General de Educación!</p>
+
+                <div class="bg-gray-100 p-4 rounded-lg shadow-sm">
+                    <p class="font-semibold mb-2">1. Según el Artículo 4°, la educación provista por el Estado es gratuita en todos sus niveles y modalidades. ¿Con qué se complementa obligatoriamente en la Educación Inicial y Primaria?</p>
+                    <div class="flex flex-col space-y-2">
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="q1" value="a" class="form-radio h-4 w-4 text-blue-600">
+                            <span class="ml-2 text-gray-700">a) Programas de becas y pasantías.</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="q1" value="b" class="form-radio h-4 w-4 text-blue-600">
+                            <span class="ml-2 text-gray-700">b) Programas de alimentación, salud y entrega de materiales educativos.</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="q1" value="c" class="form-radio h-4 w-4 text-blue-600">
+                            <span class="ml-2 text-gray-700">c) Clases de idiomas extranjeros y talleres de arte.</span>
+                        </label>
+                    </div>
+                    <!-- El feedback se generará dinámicamente con JavaScript -->
+                </div>
+
+                <div class="bg-gray-100 p-4 rounded-lg shadow-sm">
+                    <p class="font-semibold mb-2">2. Según el Artículo 5° sobre la libertad de enseñanza, ¿quiénes tienen el derecho a elegir las instituciones en que sus hijos se educan?</p>
+                    <div class="flex flex-col space-y-2">
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="q2" value="a" class="form-radio h-4 w-4 text-blue-600">
+                            <span class="ml-2 text-gray-700">a) Solo el Estado a través del Ministerio de Educación.</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="q2" value="b" class="form-radio h-4 w-4 text-blue-600">
+                            <span class="ml-2 text-gray-700">b) Los padres de familia, o quienes hagan sus veces.</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="q2" value="c" class="form-radio h-4 w-4 text-blue-600">
+                            <span class="ml-2 text-gray-700">c) Únicamente los directores de las instituciones educativas.</span>
+                        </label>
+                    </div>
+                    <!-- El feedback se generará dinámicamente con JavaScript -->
+                </div>
+
+                <div class="bg-gray-100 p-4 rounded-lg shadow-sm">
+                    <p class="font-semibold mb-2">3. Según el Artículo 14°, ¿qué garantiza el Estado en relación con la calidad educativa?</p>
+                    <div class="flex flex-col space-y-2">
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="q3" value="a" class="form-radio h-4 w-4 text-blue-600">
+                            <span class="ml-2 text-gray-700">a) La exclusividad de la educación pública.</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="q3" value="b" class="form-radio h-4 w-4 text-blue-600">
+                            <span class="ml-2 text-gray-700">b) El funcionamiento de un Sistema Nacional de Evaluación, Acreditación y Certificación de la Calidad Educativa.</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="q3" value="c" class="form-radio h-4 w-4 text-blue-600">
+                            <span class="ml-2 text-gray-700">c) La asignación de docentes extranjeros en todas las escuelas.</span>
+                        </label>
+                    </div>
+                    <!-- El feedback se generará dinámicamente con JavaScript -->
+                </div>
+
+                <div class="bg-gray-100 p-4 rounded-lg shadow-sm">
+                    <p class="font-semibold mb-2">4. ¿Qué garantiza la Educación Bilingüe Intercultural según el Artículo 20° respecto al aprendizaje de idiomas?</p>
+                    <div class="flex flex-col space-y-2">
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="q4" value="a" class="form-radio h-4 w-4 text-blue-600">
+                            <span class="ml-2 text-gray-700">a) Solo el aprendizaje del castellano.</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="q4" value="b" class="form-radio h-4 w-4 text-blue-600">
+                            <span class="ml-2 text-gray-700">b) El aprendizaje en la lengua materna de los educandos y del castellano como segunda lengua.</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="q4" value="c" class="form-radio h-4 w-4 text-blue-600">
+                            <span class="ml-2 text-gray-700">c) Únicamente el aprendizaje de lenguas extranjeras.</span>
+                        </label>
+                    </div>
+                    <!-- El feedback se generará dinámicamente con JavaScript -->
+                </div>
+
+                <div class="bg-gray-100 p-4 rounded-lg shadow-sm">
+                    <p class="font-semibold mb-2">5. Según el Artículo 21°, ¿cuál de las siguientes NO es una función del Estado en la educación?</p>
+                    <div class="flex flex-col space-y-2">
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="q5" value="a" class="form-radio h-4 w-4 text-blue-600">
+                            <span class="ml-2 text-gray-700">a) Proveer y administrar servicios educativos privados.</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="q5" value="b" class="form-radio h-4 w-4 text-blue-600">
+                            <span class="ml-2 text-gray-700">b) Ejercer un rol normativo, promotor y financiador de la educación nacional.</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="q5" value="c" class="form-radio h-4 w-4 text-blue-600">
+                            <span class="ml-2 text-gray-700">c) Promover el desarrollo científico y tecnológico en las instituciones educativas.</span>
+                        </label>
+                    </div>
+                    <!-- El feedback se generará dinámicamente con JavaScript -->
+                </div>
+
+                <div class="bg-gray-100 p-4 rounded-lg shadow-sm">
+                    <p class="font-semibold mb-2">6. Según el Artículo 71°, ¿cuáles son los tipos de gestión de las Instituciones Educativas?</p>
+                    <div class="flex flex-col space-y-2">
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="q6" value="a" class="form-radio h-4 w-4 text-blue-600">
+                            <span class="ml-2 text-gray-700">a) Públicas de gestión directa, públicas de gestión privada (por convenio) y de gestión privada.</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="q6" value="b" class="form-radio h-4 w-4 text-blue-600">
+                            <span class="ml-2 text-gray-700">b) Únicamente públicas y privadas.</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="q6" value="c" class="form-radio h-4 w-4 text-blue-600">
+                            <span class="ml-2 text-gray-700">c) Solo gestionadas por el Ministerio de Educación.</span>
+                        </label>
+                    </div>
+                    <!-- El feedback se generará dinámicamente con JavaScript -->
+                </div>
+
+                <div class="bg-gray-100 p-4 rounded-lg shadow-sm">
+                    <p class="font-semibold mb-2">7. Según el Artículo 83°, ¿qué porcentaje del Producto Bruto Interno (PBI) destina anualmente el Estado a la educación estatal?</p>
+                    <div class="flex flex-col space-y-2">
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="q7" value="a" class="form-radio h-4 w-4 text-blue-600">
+                            <span class="ml-2 text-gray-700">a) No menos del 3% del PBI.</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="q7" value="b" class="form-radio h-4 w-4 text-blue-600">
+                            <span class="ml-2 text-gray-700">b) No menos del 6% del PBI.</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="q7" value="c" class="form-radio h-4 w-4 text-blue-600">
+                            <span class="ml-2 text-gray-700">c) Un porcentaje variable cada año.</span>
+                        </label>
+                    </div>
+                    <!-- El feedback se generará dinámicamente con JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Búsqueda en la Ley -->
+        <section id="busqueda" class="content-section">
+            <h1 class="text-3xl font-bold text-gray-900 mb-6 border-b-2 pb-3 border-blue-200">
+                Búsqueda en la Ley
+            </h1>
+            <div class="p-4">
+                <p class="text-lg mb-4">Busca términos clave dentro del contenido de la Ley General de Educación.</p>
+                <input
+                    type="text"
+                    class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4"
+                    placeholder="Escribe tu término de búsqueda..."
+                />
+                <button
+                    class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition duration-300 ease-in-out shadow-md"
+                >
+                    Buscar
+                </button>
+                <div class="mt-6">
+                    <!-- Los resultados de búsqueda aparecerán aquí -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- Lógica para la navegación de la barra lateral ---
+            const sidebarLinks = document.querySelectorAll('.sidebar-link');
+            sidebarLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault(); // Evita el comportamiento de anclaje predeterminado
+
+                    // Elimina la clase 'active' de todos los enlaces
+                    sidebarLinks.forEach(item => item.classList.remove('active'));
+
+                    // Añade la clase 'active' al enlace clickeado
+                    this.classList.add('active');
+
+                    // Desplázate a la sección correspondiente
+                    const targetId = this.getAttribute('href').substring(1); // Obtiene el ID sin '#'
+                    const targetSection = document.getElementById(targetId);
+
+                    if (targetSection) {
+                        targetSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+
+            // --- Lógica para el Cuestionario Interactivo ---
+            const quizSection = document.getElementById('quiz');
+            if (quizSection) {
+                const questions = [
+                    {
+                        name: 'q1',
+                        correct: 'b',
+                        article: 'Artículo 4°'
+                    },
+                    {
+                        name: 'q2',
+                        correct: 'b',
+                        article: 'Artículo 5°'
+                    },
+                    {
+                        name: 'q3',
+                        correct: 'b',
+                        article: 'Artículo 14°'
+                    },
+                    {
+                        name: 'q4',
+                        correct: 'b',
+                        article: 'Artículo 20°'
+                    },
+                    {
+                        name: 'q5',
+                        correct: 'a', // La pregunta es "¿cuál NO es una función?", por lo que la opción incorrecta es la correcta aquí.
+                        article: 'Artículo 21°'
+                    },
+                    {
+                        name: 'q6',
+                        correct: 'a',
+                        article: 'Artículo 71°'
+                    },
+                    {
+                        name: 'q7',
+                        correct: 'b',
+                        article: 'Artículo 83°'
+                    }
+                ];
+
+                questions.forEach(qData => {
+                    const radioButtons = quizSection.querySelectorAll(`input[name="${qData.name}"]`);
+                    const feedbackParagraph = radioButtons[0].closest('.bg-gray-100').querySelector('p.mt-2');
+
+                    // Eliminar el feedback estático del HTML
+                    if (feedbackParagraph) {
+                        feedbackParagraph.remove();
+                    }
+
+                    radioButtons.forEach(radio => {
+                        // Habilitar los radio buttons
+                        radio.disabled = false;
+
+                        radio.addEventListener('change', function() {
+                            let currentFeedback = this.closest('.bg-gray-100').querySelector('.quiz-feedback');
+                            if (!currentFeedback) {
+                                currentFeedback = document.createElement('p');
+                                currentFeedback.classList.add('mt-2', 'quiz-feedback');
+                                this.closest('.bg-gray-100').appendChild(currentFeedback);
+                            }
+
+                            if (this.value === qData.correct) {
+                                currentFeedback.classList.remove('text-red-600');
+                                currentFeedback.classList.add('text-green-600');
+                                currentFeedback.textContent = `¡Correcto! (Ver ${qData.article})`;
+                            } else {
+                                currentFeedback.classList.remove('text-green-600');
+                                currentFeedback.classList.add('text-red-600');
+                                currentFeedback.textContent = `Incorrecto. La respuesta correcta es la ${qData.correct}. (Ver ${qData.article})`;
+                            }
+                        });
+                    });
+                });
+            }
+
+            // --- Lógica para la Búsqueda en la Ley ---
+            const searchSection = document.getElementById('busqueda');
+            if (searchSection) {
+                const searchInput = searchSection.querySelector('input[type="text"]');
+                const searchButton = searchSection.querySelector('button');
+                const searchResultsContainer = searchSection.querySelector('.mt-6');
+                const staticNote = searchSection.querySelector('p.text-red-600');
+
+                // Eliminar la nota estática y habilitar los elementos de búsqueda
+                if (staticNote) {
+                    staticNote.remove();
+                }
+                if (searchInput) {
+                    searchInput.disabled = false;
+                }
+                if (searchButton) {
+                    searchButton.disabled = false;
+                }
+
+                // Contenido de las secciones para la búsqueda (excluyendo quiz y búsqueda misma)
+                const sectionsContent = {
+                    introduccion: {
+                        title: 'Introducción y Fundamentos de la Ley General de Educación N° 28044',
+                        text: `La Ley General de Educación N° 28044 es el marco legal fundamental que rige el sistema educativo peruano. Promulgada en 2003, establece los lineamientos generales, las atribuciones del Estado, y los derechos y responsabilidades de las personas y la sociedad en su función educadora.
+                        Artículo 1°: Objeto y ámbito de aplicación. Esta ley tiene por objeto establecer los lineamientos generales de la educación y del Sistema Educativo Peruano, las atribuciones y obligaciones del Estado y los derechos y responsabilidades de las personas y la sociedad en su función educadora. Rige todas las actividades educativas realizadas dentro del territorio nacional.
+                        Artículo 2°: Concepto de la educación. La educación es un proceso de aprendizaje y enseñanza que se desarrolla a lo largo de toda la vida y que contribuye a la formación integral de las personas, al pleno desarrollo de sus potencialidades, a la creación de cultura, y al desarrollo de la familia y de la comunidad nacional, latinoamericana y mundial. Se desarrolla en instituciones educativas y en diferentes ámbitos de la sociedad.
+                        Artículo 3°: La educación como derecho. La educación es un derecho fundamental de la persona y de la sociedad. El Estado garantiza el ejercicio del derecho a una educación integral y de calidad para todos y la universalización de la Educación Básica.
+                        Artículo 4°: Gratuidad de la educación. La educación es un servicio público; cuando lo provee el Estado es gratuita en todos sus niveles y modalidades. En Educación Inicial y Primaria se complementa con programas de alimentación, salud y materiales educativos.
+                        Artículo 5°: Libertad de enseñanza. La libertad de enseñanza es reconocida y garantizada por el Estado. Los padres tienen el deber de educar a sus hijos y el derecho a elegir las instituciones. Toda persona natural o jurídica tiene derecho a constituir y conducir centros educativos.
+                        Artículo 6°: Formación ética y cívica. La formación ética y cívica es obligatoria en todo proceso educativo, preparando a los educandos para sus obligaciones y derechos ciudadanos. La enseñanza de la Constitución Política y derechos humanos es obligatoria.
+                        Artículo 7°: Proyecto Educativo Nacional. Es el conjunto de políticas que dan el marco estratégico al desarrollo de la educación, construido y desarrollado en conjunto por el Estado y la sociedad a través del diálogo y consenso.`
+                    },
+                    principios_fines: {
+                        title: 'Principios y Fines de la Educación Peruana',
+                        text: `La educación peruana se sustenta en principios clave y persigue fines esenciales para el desarrollo integral de las personas y la sociedad.
+                        Artículo 8°: Principios de la educación. Ética: Promueve valores de paz, solidaridad, justicia, libertad, honestidad, tolerancia, responsabilidad, trabajo, verdad y respeto a las normas. Equidad: Garantiza iguales oportunidades de acceso, permanencia y trato en un sistema educativo de calidad. Inclusión: Incorpora a personas con discapacidad, grupos excluidos y vulnerables. Calidad: Asegura condiciones adecuadas para una educación integral, pertinente, abierta, flexible y permanente. Democracia: Promueve el respeto a los derechos humanos, libertad de conciencia, pensamiento y opinión, y el ejercicio pleno de la ciudadanía. Interculturalidad: Asume la diversidad cultural, étnica y lingüística como riqueza. Conciencia ambiental: Motiva el respeto, cuidado y conservación del entorno natural. Creatividad e innovación: Promueven la producción de nuevos conocimientos.
+                        Artículo 9°: Fines de la educación peruana. Formar personas capaces de lograr su realización ética, intelectual, artística, cultural, afectiva, física, espiritual y religiosa, promoviendo su identidad y autoestima. Contribuir a formar una sociedad democrática, solidaria, justa, inclusiva, próspera, tolerante y forjadora de una cultura de paz.`
+                    },
+                    universalizacion_calidad_equidad: {
+                        title: 'Universalización, Calidad y Equidad de la Educación',
+                        text: `La ley busca asegurar que la educación sea accesible para todos, de alta calidad y equitativa, eliminando barreras y promoviendo la igualdad de oportunidades.
+                        Artículo 10°: Criterios para la universalización, la calidad y la equidad. Se adopta un enfoque intercultural y se realiza una acción descentralizada, intersectorial, preventiva, compensatoria y de recuperación para igualar oportunidades y lograr resultados satisfactorios.
+                        Artículo 11°: Articulación intersectorial. La articulación intersectorial en el Estado y con el sector privado se da en todos los ámbitos de la gestión descentralizada, con activa participación de la comunidad educativa.
+                        Artículo 12°: Universalización de la Educación Básica. La educación es obligatoria para los estudiantes de los niveles de inicial, primaria y secundaria. El Estado provee los servicios públicos necesarios para lograr este objetivo.
+                        Artículo 13°: Calidad de la educación. Es el nivel óptimo de formación que deben alcanzar las personas para enfrentar los retos del desarrollo humano. Factores clave incluyen currículos básicos, inversión mínima por alumno, formación docente, infraestructura adecuada e investigación educativa.
+                        Artículo 17° y 18°: Equidad en la educación y Medidas de equidad. El Estado toma medidas para compensar las desigualdades derivadas de factores económicos, geográficos o sociales, favoreciendo a segmentos sociales en situación de abandono o riesgo. Esto incluye políticas compensatorias, asignación prioritaria de recursos, programas inclusivos y sistemas de becas.`
+                    },
+                    evaluacion_certificacion: {
+                        title: 'Evaluación y Certificación de la Calidad Educativa',
+                        text: `El Estado garantiza un sistema de evaluación, acreditación y certificación para asegurar la calidad educativa en todo el país.
+                        Artículo 14°: Sistema Nacional de Evaluación, Acreditación y Certificación de la Calidad Educativa. El Estado garantiza el funcionamiento de un Sistema Nacional de Evaluación, Acreditación y Certificación de la Calidad Educativa, que abarca todo el territorio nacional y responde con flexibilidad a las características de cada región.
+                        Artículo 15°: Organismos del Sistema Nacional de Evaluación, Acreditación y Certificación. En Educación Básica, el Instituto Peruano de Evaluación, Acreditación y Certificación Educativa. En Educación Superior, un organismo creado por ley específica.
+                        Artículo 16°: Funciones de los Órganos del Sistema Nacional de Evaluación, Acreditación y Certificación. Promueven una cultura de calidad. Evalúan la calidad del aprendizaje y procesos pedagógicos. Acreditan periódicamente las instituciones educativas. Certifican y recertifican competencias profesionales. Difunden resultados y desarrollan programas de formación especializada.`
+                    },
+                    educacion_intercultural_bilingue: {
+                        title: 'Educación Intercultural Bilingüe',
+                        text: `La ley reconoce y garantiza el derecho de los pueblos indígenas a una educación en condiciones de igualdad, promoviendo la diversidad cultural y lingüística.
+                        Artículo 19°: Educación de los pueblos indígenas. El Estado reconoce y garantiza el derecho de los pueblos indígenas a una educación en condiciones de igualdad, estableciendo programas especiales que garanticen igualdad de oportunidades y equidad de género.
+                        Artículo 20°: Educación Bilingüe Intercultural. Promueve la valoración y enriquecimiento de la propia cultura, respeto a la diversidad cultural y diálogo intercultural. Garantiza el aprendizaje en la lengua materna de los educandos y del castellano como segunda lengua. Determina la obligación de los docentes de dominar la lengua originaria y el castellano.`
+                    },
+                    roles_estado_sociedad: {
+                        title: 'Roles del Estado y la Sociedad en la Educación',
+                        text: `La educación es una responsabilidad compartida entre el Estado y la sociedad, cada uno con funciones específicas para asegurar su calidad y equidad.
+                        Artículo 21°: Función del Estado. Ejercer un rol normativo, promotor, compensador, concertador, articulador, garante, planificador, regulador y financiador. Proveer y administrar servicios educativos públicos gratuitos y de calidad. Promover el desarrollo científico y tecnológico, reconocer la innovación e investigación.
+                        Artículo 22°: Función de la sociedad. Tiene el derecho y el deber de contribuir a la calidad y equidad de la educación, participando en la definición de políticas educativas y colaborando en la prestación del servicio.
+                        Artículo 23°: Medios de comunicación. Deben contribuir a la formación ética, cívica, cultural y democrática de la población, difundiendo contenidos que respeten a la persona humana y su dignidad.
+                        Artículo 24°: Empresas. Contribuyen al desarrollo de la educación nacional, participando en el diseño de políticas, promoviendo alianzas estratégicas con instituciones educativas y brindando facilidades a su personal para la educación.`
+                    },
+                    estructura_sistema: {
+                        title: 'Estructura General del Sistema Educativo Peruano',
+                        text: `El Sistema Educativo Peruano es integrador y flexible, organizado en etapas, niveles, modalidades, ciclos y programas para atender las diversas necesidades de aprendizaje.
+                        Artículo 25°: Características del Sistema Educativo. Es integrador y flexible, abarcando y articulando todos sus elementos y permitiendo a los usuarios organizar su trayectoria educativa. Se adecua a las necesidades y exigencias de la diversidad del país.
+                        Artículo 26°: Articulación y coordinación del Sistema Educativo. Articula sus componentes para que toda persona tenga oportunidad de alcanzar un mayor nivel de aprendizaje, manteniendo relaciones funcionales con entidades del Estado, sociedad, empresa y medios de comunicación.
+                        Artículo 27°: La Educación a Distancia. Modalidad caracterizada por la interacción simultánea o diferida entre actores educativos, facilitada por medios tecnológicos que propician el aprendizaje autónomo. Aplicable a todas las etapas.
+                        Artículo 28°: Las Etapas, Niveles, Modalidades, Ciclos y Programas. Define cómo se organiza el sistema educativo: Etapas (periodos progresivos), Niveles (periodos graduales), Modalidad (alternativas de atención según características), Ciclos (procesos educativos por logros), Programas (conjuntos de acciones educativas).
+                        Artículo 29°: Etapas del Sistema Educativo. Educación Básica: Destinada a favorecer el desarrollo integral del estudiante, el despliegue de sus potencialidades y el desarrollo de capacidades, conocimientos, actitudes y valores fundamentales. Educación Superior: Destinada a la investigación, creación y difusión de conocimientos; a la proyección a la comunidad; al logro de competencias profesionales de alto nivel.
+                        Artículo 30°: Evaluación del alumno. Es un proceso permanente de comunicación y reflexión sobre los procesos y resultados del aprendizaje. Es formativa e integral, orientada a mejorar esos procesos y ajustarse a las necesidades de los estudiantes.`
+                    },
+                    niveles_modalidades_basica: {
+                        title: 'Niveles y Modalidades de la Educación Básica',
+                        text: `La Educación Básica es obligatoria y se organiza en diferentes modalidades para satisfacer las necesidades de aprendizaje de niños, jóvenes y adultos.
+                        Artículo 31°: Objetivos de la Educación Básica. Formar integralmente al educando en aspectos físico, afectivo y cognitivo para su identidad personal y social. Desarrollar capacidades, valores y actitudes para el aprendizaje a lo largo de toda la vida. Desarrollar aprendizajes en ciencias, humanidades, técnica, cultura, arte, educación física y nuevas tecnologías.
+                        Artículo 32°: Organización de la Educación Básica. Se organiza en Educación Básica Regular, Educación Básica Alternativa y Educación Básica Especial.
+                        Artículo 33° y 34°: Currículo de la Educación Básica y sus Características. Es abierto, flexible, integrador y diversificado, sustentado en los principios y fines de la educación peruana. El Ministerio de Educación diseña los currículos básicos nacionales, que se diversifican regional y localmente.
+                        Artículo 35°: Culminación de la Educación Básica. Da derecho al diploma de egresado con mención en un área técnica, habilitando para el mercado laboral y acceso a nivel superior.
+                        Artículo 36°: Educación Básica Regular. Abarca Educación Inicial (0-5 años), Primaria (6 años) y Secundaria (5 años), dirigida a niños y adolescentes según su evolución física, afectiva y cognitiva.
+                        Artículo 37° y 38°: Educación Básica Alternativa y Alfabetización. Dirigida a jóvenes y adultos que no accedieron o no culminaron la educación regular, o que necesitan compatibilizar estudio y trabajo. La alfabetización está comprendida en esta modalidad.
+                        Artículo 39°: Educación Básica Especial. Con enfoque inclusivo, atiende a personas con necesidades educativas especiales (discapacidad o superdotados) buscando su integración en aulas regulares.`
+                    },
+                    educacion_tecnico_comunitaria_superior: {
+                        title: 'Educación Técnico-Productiva, Comunitaria y Superior',
+                        text: `Más allá de la educación básica, el sistema peruano ofrece modalidades especializadas para el desarrollo laboral, comunitario y profesional.
+                        Artículo 40°: Definición y finalidad de la Educación Técnico-Productiva. Orientada a la adquisición de competencias laborales y empresariales, contribuyendo a un mejor desempeño laboral y desarrollo personal.
+                        Artículo 41° al 45°: Objetivos, Organización, Políticas y Centros de la ETP. Busca desarrollar competencias para el trabajo dependiente o independiente, motivar la aplicación de conocimientos y actualizar a trabajadores. Se organiza en ciclos (Básico y Medio) y los Centros de ETP ofrecen servicios educativos y capacitación.
+                        Artículo 46° al 48°: Educación Comunitaria. Se desarrolla desde las organizaciones de la sociedad, orientada al enriquecimiento de capacidades personales y promoción del desarrollo humano. Sus aprendizajes pueden ser convalidados en otros niveles.
+                        Artículo 49° al 51°: Educación Superior. Es la segunda etapa del Sistema Educativo, consolida la formación integral, produce conocimiento, desarrolla investigación y forma profesionales de alto nivel. Requiere haber concluido la Educación Básica y se imparte en instituciones universitarias, institutos y escuelas superiores.`
+                    },
+                    comunidad_educativa: {
+                        title: 'Actores de la Comunidad Educativa: Roles y Responsabilidades',
+                        text: `La comunidad educativa es un pilar fundamental del sistema, con roles y responsabilidades definidos para cada uno de sus miembros.
+                        Artículo 52°: Conformación y participación. La comunidad educativa está conformada por estudiantes, padres de familia, profesores, directivos, administrativos, ex alumnos y miembros de la comunidad local. Participan en la formulación y ejecución del Proyecto Educativo Institucional.
+                        Artículo 53°: El estudiante. Es el centro del proceso educativo. Tiene derecho a un sistema eficiente, buen trato y orientación, y la responsabilidad de asumir su aprendizaje, practicar la tolerancia y participar en la institución.
+                        Artículo 54°: La familia. Núcleo fundamental de la sociedad, responsable de la educación integral de los hijos. Deben educar con respeto, informarse sobre la calidad del servicio educativo, participar y colaborar en el proceso.
+                        Artículo 55°: El Director. Máxima autoridad y el representante legal de la Institución Educativa. Responsable de la gestión en los ámbitos pedagógico, institucional y administrativo.
+                        Artículo 56° al 61°: El Profesor y la Carrera Pública Magisterial. Agente fundamental del proceso educativo, con misión de contribuir eficazmente en la formación de los estudiantes. La carrera pública docente se rige por criterios de formación, idoneidad, desempeño y méritos. Se requiere título pedagógico para la docencia en Educación Básica.
+                        Artículo 62°: Personal administrativo. Coopera para la creación de un ambiente favorable para el aprendizaje, desempeñándose en funciones de apoyo a la gestión educativa.`
+                    },
+                    gestion_sistema: {
+                        title: 'Gestión Descentralizada del Sistema Educativo',
+                        text: `La gestión del sistema educativo nacional es descentralizada, simplificada, participativa y flexible, buscando la autonomía pedagógica y de gestión.
+                        Artículo 63°: Definición de la gestión. La gestión del sistema educativo nacional es descentralizada, simplificada, participativa y flexible. Se ejecuta en un marco de respeto a la autonomía pedagógica y de gestión que favorezca la acción educativa.
+                        Artículo 64°: Objetivos de la gestión. Contribuir a desarrollar la Institución Educativa como comunidad de aprendizaje, fortalecer su capacidad de decisión, asegurar la coherencia administrativa, lograr manejo eficaz, desarrollar liderazgos democráticos, etc.
+                        Artículo 65°: Instancias de gestión. La Institución Educativa. La Unidad de Gestión Educativa Local (UGEL). La Dirección Regional de Educación (DRE). El Ministerio de Educación (MINEDU).`
+                    },
+                    instancias_gestion: {
+                        title: 'Instancias de Gestión Educativa: IE, UGEL, DRE, MINEDU y CNE',
+                        text: `El sistema educativo peruano se organiza a través de diversas instancias de gestión, cada una con roles y funciones específicas para asegurar la implementación de la política educativa.
+                        Artículo 66° al 72°: La Institución Educativa (IE). Es la primera y principal instancia de gestión, donde tiene lugar la prestación del servicio. Elabora su Proyecto Educativo Institucional, organiza su gestión, diversifica el currículo y rinde cuentas. Puede ser pública (gestión directa o privada por convenio) o privada.
+                        Artículo 73° al 75°: La Unidad de Gestión Educativa Local (UGEL). Instancia de ejecución descentralizada del Gobierno Regional. Fortalece capacidades de gestión de las IE, impulsa la cohesión social, diseña y evalúa el Proyecto Educativo Local, y conduce procesos de personal docente y administrativo.
+                        Artículo 76° al 78°: La Dirección Regional de Educación (DRE). Órgano especializado del Gobierno Regional. Promueve educación, cultura, deporte, ciencia y tecnología. Autoriza el funcionamiento de IE, formula el presupuesto educativo regional y gestiona financiamiento.
+                        Artículo 79° y 80°: El Ministerio de Educación (MINEDU). Órgano del Gobierno Nacional que define, dirige y articula la política de educación, cultura, recreación y deporte. Elabora diseños curriculares básicos, dirige programas nacionales y lidera el incremento de la inversión educativa.
+                        Artículo 81°: El Consejo Nacional de Educación (CNE). Órgano especializado, consultivo y autónomo del Ministerio de Educación. Participa en la formulación, concertación, seguimiento y evaluación del Proyecto Educativo Nacional y políticas educativas de mediano y largo plazo.
+                        Artículo 82°: Coordinación con los Gobiernos Locales. El MINEDU, DRE y UGEL coordinan con las municipalidades para apoyar la prestación de servicios de las IE y contribuir al desarrollo educativo en su jurisdicción.`
+                    },
+                    financiamiento: {
+                        title: 'Financiamiento de la Educación Pública',
+                        text: `El financiamiento es crucial para garantizar la calidad y equidad de la educación pública en el Perú.
+                        Artículo 83°: Financiamiento de la educación. El financiamiento de la educación comprende los recursos financieros destinados a satisfacer las necesidades educativas de la población. Anualmente, el Estado destina no menos del 6% del Producto Bruto Interno a la educación estatal.
+                        Artículo 84°: Fuentes de financiamiento. Tesoro Público, recursos directamente recaudados, donaciones, excedentes por actividades productivas, endeudamiento interno y externo.
+                        Artículo 85° al 90°: Asignación, Ingresos Propios, Transferencia, Regulación Tributaria y Eficiencia del Gasto. La asignación se basa en objetivos y metas, incluyendo estudios de costos por alumno. Los ingresos propios de las IE se destinan a proyectos de inversión. Las donaciones gozan de exoneración tributaria. La evaluación del gasto busca transparencia y eficiencia.
+                        Artículo 91°: El Fondo Nacional de Desarrollo de la Educación Peruana (FONDEP). Apoya el financiamiento de proyectos de inversión, innovación y desarrollo educativo.
+                        Artículo 92°: Convenios con asociaciones sin fines de lucro. El Estado puede establecer convenios con asociaciones sin fines de lucro que conducen instituciones de educación pública para apoyar a la población desfavorecida.`
+                    },
+                    disposiciones_complementarias_finales: {
+                        title: 'Disposiciones Complementarias y Finales',
+                        text: `Estas disposiciones establecen la implementación gradual de la ley, la derogación de normativas anteriores y otros aspectos transitorios.
+                        Disposición Primera (Complementaria): Aplicación gradual. La aplicación de la Ley General de Educación será gradual y progresiva, de acuerdo con el plan general de conversión del sistema educativo que formulará el Ministerio de Educación.
+                        Disposición Tercera (Complementaria): Incremento presupuestal. El incremento del presupuesto destinado a educación, de conformidad con el artículo 83°, se realizará progresivamente. El financiamiento será considerado inversión intangible.
+                        Disposición Séptima (Complementaria): Creación del Instituto Peruano de Evaluación. El Poder Ejecutivo presentará el proyecto de ley de creación del Instituto Peruano de Evaluación, Acreditación y Certificación Educativa para la Educación Básica.
+                        Disposición Octava (Complementaria): Creación del FONDEP. Créase el Fondo Nacional de Desarrollo de la Educación Peruana (FONDEP) como Programa Presupuestal del Ministerio de Educación, constituido por recursos asignados, ingresos propios, donaciones, etc.
+                        Disposición Primera (Final): Derogación de la Ley N° 23384. Derógase la Ley N° 23384, Ley General de Educación, y sus modificatorias y complementarias; así como los demás dispositivos que se opongan a la presente Ley.
+                        Disposición Segunda (Final): Reglamentación. El Ministerio de Educación reglamentará la presente ley en un plazo de ciento veinte días.`
+                    }
+                };
+
+                searchButton.addEventListener('click', () => {
+                    const searchTerm = searchInput.value.trim().toLowerCase();
+                    searchResultsContainer.innerHTML = ''; // Limpiar resultados anteriores
+
+                    if (!searchTerm) {
+                        searchResultsContainer.innerHTML = '<p class="mt-4 text-gray-600">Por favor, introduce un término de búsqueda.</p>';
+                        return;
+                    }
+
+                    let foundResults = [];
+
+                    for (const key in sectionsContent) {
+                        const section = sectionsContent[key];
+                        const sectionTitle = section.title;
+                        const sectionText = section.text.toLowerCase();
+
+                        // Buscar en el título de la sección
+                        if (sectionTitle.toLowerCase().includes(searchTerm)) {
+                            foundResults.push({
+                                sectionTitle: sectionTitle,
+                                snippet: `El término se encuentra en el título de la sección.`
+                            });
+                        }
+
+                        // Buscar en el contenido de la sección
+                        let startIndex = sectionText.indexOf(searchTerm);
+                        while (startIndex !== -1) {
+                            const start = Math.max(0, startIndex - 50);
+                            const end = Math.min(sectionText.length, startIndex + searchTerm.length + 50);
+                            let snippet = section.text.substring(start, end); // Usar el texto original para el snippet
+                            snippet = snippet.replace(new RegExp(searchTerm, 'gi'), (match) => `<mark>${match}</mark>`);
+                            foundResults.push({
+                                sectionTitle: sectionTitle,
+                                snippet: `...${snippet}...`
+                            });
+                            startIndex = sectionText.indexOf(searchTerm, startIndex + 1);
+                        }
+                    }
+
+                    if (foundResults.length > 0) {
+                        const resultsList = document.createElement('ul');
+                        resultsList.classList.add('list-disc', 'list-inside', 'space-y-2');
+                        foundResults.forEach(result => {
+                            const listItem = document.createElement('li');
+                            listItem.classList.add('bg-gray-50', 'p-3', 'rounded-lg', 'shadow-sm');
+                            listItem.innerHTML = `<span class="font-medium text-blue-700">${result.sectionTitle}:</span> ${result.snippet}`;
+                            resultsList.appendChild(listItem);
+                        });
+                        searchResultsContainer.appendChild(document.createElement('h3')).outerHTML = '<h3 class="font-semibold text-xl mb-3">Resultados de la búsqueda:</h3>';
+                        searchResultsContainer.appendChild(resultsList);
+                    } else {
+                        searchResultsContainer.innerHTML = `<p class="mt-4 text-gray-600">No se encontraron resultados para "${searchInput.value}".</p>`;
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+
