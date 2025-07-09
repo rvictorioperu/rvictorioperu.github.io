@@ -49,11 +49,26 @@
             border-bottom: none;
             margin-bottom: 0;
         }
+
+        /* Custom style for fixed sidebar on medium screens and up */
+        @media (min-width: 768px) {
+            .fixed-sidebar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100vh; /* Full viewport height */
+                overflow-y: auto; /* Enable scrolling for sidebar content if it's too long */
+            }
+            .main-content-offset {
+                margin-left: 18rem; /* Adjust this value to match the sidebar width (w-64 is 16rem, plus margin) */
+            }
+        }
     </style>
 </head>
 <body class="min-h-screen bg-gray-100 font-sans text-gray-800 flex flex-col md:flex-row">
     <!-- Sidebar Navigation -->
-    <nav class="w-full md:w-64 bg-white p-6 shadow-lg md:shadow-xl flex-shrink-0 rounded-lg m-4 md:m-6">
+    <!-- Added fixed-sidebar class for fixed positioning on medium screens and up -->
+    <nav class="w-full md:w-64 bg-white p-6 shadow-lg md:shadow-xl flex-shrink-0 rounded-lg m-4 md:m-6 md:m-0 md:rounded-none md:rounded-r-lg fixed-sidebar">
         <h2 class="text-2xl font-bold text-gray-900 mb-6">Ley 28044</h2>
         <ul class="space-y-3">
             <li>
@@ -188,7 +203,8 @@
     </nav>
 
     <!-- Main Content Area -->
-    <main class="flex-grow p-6 md:p-8 bg-white shadow-lg md:shadow-xl rounded-lg m-4 md:m-6">
+    <!-- Added main-content-offset class to prevent content from going under the fixed sidebar -->
+    <main class="flex-grow p-6 md:p-8 bg-white shadow-lg md:shadow-xl rounded-lg m-4 md:m-6 main-content-offset">
 
         <!-- Sección: Introducción y Fundamentos de la Ley General de Educación N° 28044 -->
         <section id="introduccion" class="content-section">
@@ -1105,4 +1121,3 @@
     </script>
 </body>
 </html>
-
